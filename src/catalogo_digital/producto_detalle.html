@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Veterinaria - Mark 02</title>
+    <link rel="icon" type="image/png" href="/img/habdes_digital_favicon_mark_02.png" sizes="196x196" />
     <!-- META only -->
     <meta name="description" content="Digitaliza tu negocio al mejor precio">
     <meta name="keywords"
@@ -18,8 +19,7 @@
     <meta property="og:image:width" content="739">
     <meta property="og:image:height" content="410">
     <meta name="author" content="Letto">
-    <link rel="icon" type="image/png" href="/img/habdes_digital_logo_favicon_mark_01.png"
-        sizes="196x196" />
+    <link rel="icon" type="image/png" href="/img/habdes_digital_logo_favicon_mark_01.png" sizes="196x196" />
     <link href="/src/style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -48,7 +48,7 @@
                 class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between  mb-4-bottom">
                 <a href="/"
                     class="mk_01_logo_principal d-flex align-items-center col-md-2 mb-2 mb-md-0 text-dark text-decoration-none">
-                    <img src="/img/habdes_digital_logo_mark_01.png">
+                    <img src="/img/habdes_digital_logo_mark_04.png">
                 </a>
 
                 <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 nav_section">
@@ -60,8 +60,7 @@
 
                 <div class="col-md-4 text-end btn_contacto_section">
                     <button type="button" class="btn_principal_alterno me-2"><a>Contactar</a></button>
-                    <button type="button" class="btn_principal"><a
-                            href="/src/catalogo_digital.html">Ver
+                    <button type="button" class="btn_principal"><a href="/src/catalogo_digital.html">Ver
                             catálogo</a></button>
                 </div>
             </header>
@@ -71,24 +70,25 @@
     <section class="breadcrumb_container">
         <div class="breadcrumb_section ">
             <ul class="breadcrumb">
-                <li><a href="#">Inicio</a></li>
-                <li class="breadcrumb_active">Catálogo</li>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/src/catalogo_digital.html">Catálogo</a></li>
+                <li class="breadcrumb_active">Batipato</li>
             </ul>
         </div>
     </section>
     <section>
         <div class="product_container">
             <div class="product_container_img ">
-                <img src="/img/habdes_digital_catalogo_digital_producto_09.png">
+                <img src="/img/habdes_digital_nuestros_productos_01.png">
             </div>
             <div class="product_container_content">
                 <div class="product_container_content_head">
                     <div class="product_container_content_head_tittle">
                         <div>
-                            <h1 id="nombreProducto">Mueble de cocina</h1>
+                            <h1 id="nombreProducto">Batipato</h1>
                         </div>
                         <div class="productos_section_card_content_categoria etiqueta_producto_detalle">
-                            <p>Dormitorio</p>
+                            <p>Juguete</p>
                         </div>
                     </div>
                     <div class="product_container_content_head_description">
@@ -101,7 +101,7 @@
                     <h5>Precio Total</h5>
                     <div style="display: flex; flex-direction: row; font-weight: bold; font-size: 20px;">
                         <p>S/.
-                        <p id="precioProducto">350</p>
+                        <p id="precioProducto">50</p>
                         </p>
                     </div>
 
@@ -253,7 +253,33 @@
                         &nbsp;
                         &nbsp;
                         <div class="product_widget_texto">
-                            <a href="/">Delivery</a>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" style="background: none; border: none; font-weight:bold ;"
+                                data-bs-toggle="modal" data-bs-target="#delivery">
+                                Delivery
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="delivery" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Nuestros precios de delivery</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="product_widget_shop border">
@@ -266,7 +292,33 @@
                         &nbsp;
                         &nbsp;
                         <div class="product_widget_texto">
-                            <a href="/">Recojo en tienda</a>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" style="background: none; border: none; font-weight:bold ;"
+                                data-bs-toggle="modal" data-bs-target="#recojoLocal">
+                                Recojo en tienda
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="recojoLocal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Encuéntranos en:</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="product_widget_payment border">
@@ -279,7 +331,34 @@
                         &nbsp;
                         &nbsp;
                         <div class="product_widget_texto">
-                            <a href="/">Pagos</a>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" style="background: none; border: none; font-weight:bold ;"
+                                data-bs-toggle="modal" data-bs-target="#metodosPagosAceptados">
+                                Métodos de pagos aceptados
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="metodosPagosAceptados" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Métodos de pagos que
+                                                aceptamos</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -298,22 +377,22 @@
                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                 <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
             </symbol>
-            <symbol id="chat_icon" viewBox="0 0 16 16" width="20" height="20" fill="#3CA80B">
+            <symbol id="chat_icon" viewBox="0 0 16 16" width="20" height="20" fill="#4296BB">
                 <path
                     d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z" />
                 <path
                     d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
             </symbol>
-            <symbol id="payment_icon" viewBox="0 0 16 16" width="40" height="40" fill="#3CA80B">
+            <symbol id="payment_icon" viewBox="0 0 16 16" width="40" height="40" fill="#4296BB">
                 <path
                     d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z" />
                 <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z" />
             </symbol>
-            <symbol id="truck_icon" viewBox="0 0 16 16" width="40" height="40" fill="#3CA80B">
+            <symbol id="truck_icon" viewBox="0 0 16 16" width="40" height="40" fill="#4296BB">
                 <path
                     d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
             </symbol>
-            <symbol id="shop_icon" viewBox="0 0 16 16" width="40" height="40" fill="#3CA80B">
+            <symbol id="shop_icon" viewBox="0 0 16 16" width="40" height="40" fill="#4296BB">
                 <path
                     d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z" />
             </symbol>
