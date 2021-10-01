@@ -116,5 +116,3 @@ function cierreVentana() {
 // MÉTODO+DE+PAGO%3A%0A
 // Método+de+pago+solicitado%3A+${formaPago}
 
-
-
