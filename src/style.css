@@ -671,6 +671,83 @@ ul.breadcrumb li a:hover {
     color: var(--color-propuesta02);
 }
 
+
+/*--------------------------------------------------------------RESERVAS_SECTION--------------------------------------------------------------*/
+.habdes_digital_reservas_banner_section_contenedor {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+    overflow: hidden;
+}
+.habdes_digital_reservas_banner_section_contenedor_element > img{
+    max-width: 750px;
+    width: 100%;
+    height: 100%;
+}
+
+.habdes_digital_reservas_encabezado_section{
+    margin: 5% 0;
+}
+.habdes_digital_reservas_encabezado_section_título{
+    text-align: center;
+}
+
+.habdes_digital_reservas_encabezado_servicios {
+    margin: 0 15%;
+}
+.habdes_digital_reservas_encabezado_servicios_paso_01_content > div{
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2%;
+    margin: 2.5% 0;
+}
+.element_precio01{
+    margin: 0 0 0 50%;
+    padding: 1% 0;
+    height: 100%;
+
+}
+.element_precio02{
+    margin: 0 0 0 15%;
+    padding: 1% 0;
+    height: 100%;
+
+}
+.divisor_vertical{
+    border-left: 2px solid rgba(0, 0, 0, 0.08);
+    height: 72px;
+}
+
+.habdes_digital_reservas_encabezado_servicios_paso_02 > div{
+    margin: 2.5% 0;
+
+}
+.element_date_time{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.habdes_digital_reservas_encabezado_servicios_paso_03 > div{
+    margin: 2.5% 0;
+}
+.element_button {
+    text-align: center;
+}   
+
+.element_date_time_container_time{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    justify-content: space-evenly;
+}
+
+.element_date_time_container_time > label{
+    margin: 2%;
+    
+}
+
 /*-------------------------MEDIA_QUERY_SECTION-------------------------*/
 
 @media(max-width: 2560px) {}
@@ -808,6 +885,13 @@ ul.breadcrumb li a:hover {
         background: #f8f9fa;
     }
 
+
+    .element_date_time{
+        flex-direction: column;
+    }
+    .element_date_time > div{
+        margin: 2.5%;
+    }
 }
 
 @media (max-width: 540px) {
@@ -843,6 +927,11 @@ ul.breadcrumb li a:hover {
     .nuestra_productos_section_producto {
         grid-template-columns: 100%;
     }
+
+
+    .element_date_time_container_time{
+        grid-template-columns: 25% 25% 25% 25%;
+    }
 }
 
 /* MQ PARA IPHONE X */
@@ -854,5 +943,9 @@ ul.breadcrumb li a:hover {
 @media(max-width: 320px) {
     .btn_secundario_verProducto_alterno {
         padding: 5px 2px;
+    }
+    
+    .element_date_time_container_time{
+        grid-template-columns: 33% 33% 33%;
     }
 }

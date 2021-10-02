@@ -116,3 +116,30 @@ function cierreVentana() {
 // MÉTODO+DE+PAGO%3A%0A
 // Método+de+pago+solicitado%3A+${formaPago}
 
+//-------------------FUNCION PARA OBTNER LA FECHA
+
+// function mostrarHora () {
+//     momentoActual = new Date();
+//     hora = momentoActual.getHours();
+//     minuto = momentoActual.getMinutes();
+//     segundo = momentoActual.getSeconds();
+//     horaImprimible= hora + ":" + minuto + ":" + segundo
+
+//     //salida
+//     document.getElementById("mostrarHora").innerHTML = horaImprimible
+// }
+
+function fechaSesion() {
+    const fecha = new Date()
+    const añoActual = fecha.getFullYear();
+    const hoy = fecha.getDate();
+    const mesActual = fecha.getMonth() + 1
+    let fechaObtenida = hoy + "/" + mesActual + "/" + añoActual
+    document.getElementById("mostrarFecha").innerHTML= fechaObtenida
+} 
+
+/*
+La siguiente cadena (string) se muestra en la ventana de la consola:
+<p>primer parrafo hijo de div id="txt"</p>
+<p>segundo parrafo hijo de id="txt" txt</p>
+*/
