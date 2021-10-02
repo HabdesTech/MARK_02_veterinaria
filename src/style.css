@@ -686,45 +686,45 @@ ul.breadcrumb li a:hover {
 }
 
 .habdes_digital_reservas_encabezado_section{
-    margin: 5% 0;
+    margin: 5% 0 2%;
 }
 .habdes_digital_reservas_encabezado_section_título{
     text-align: center;
+}
+.fechaActual{
+    max-width: 1400px;
+    margin: 0 15%;
 }
 
 .habdes_digital_reservas_encabezado_servicios {
     margin: 0 15%;
 }
-.habdes_digital_reservas_encabezado_servicios_paso_01_content > div{
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+.habdes_digital_reservas_servicios_paso_01_content{
+    margin: 3% 0;
+    
+}
+.habdes_digital_reservas_servicios_paso_01_element{
+    margin: 0 0 1%;
+}
+
+.habdes_digital_reservas_servicios_paso_01_element > label{
+    padding: 2%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1.2%;
-    margin: 2.5% 0;
 }
-.element_precio01{
-    margin: 0 0 0 50%;
-    padding: 1% 0;
-    height: 100%;
-
+.habdes_digital_reservas_servicios_paso_01_element_texto{
+    text-align: left;
 }
-.element_precio02{
-    margin: 0 0 0 15%;
-    padding: 1% 0;
-    height: 100%;
-
-}
-.divisor_vertical{
-    border-left: 2px solid rgba(0, 0, 0, 0.08);
-    height: 72px;
+.habdes_digital_reservas_servicios_paso_01_element_precio{
+    font-size: 30px;
 }
 
-.habdes_digital_reservas_encabezado_servicios_paso_02 > div{
-    margin: 2.5% 0;
 
-}
+
+/* SECTION DE FECHAS Y HORAS */
 .element_date_time{
     display: flex;
     justify-content: space-evenly;
@@ -798,6 +798,12 @@ ul.breadcrumb li a:hover {
 @media(max-width: 1024px) {
     .productos_section_card_content_buttons {
         margin: 1% 0;
+    }
+    .habdes_digital_reservas_encabezado_servicios_paso_02{
+        margin: 10% 0;
+    }
+    .habdes_digital_reservas_encabezado_servicios_paso_02_container{
+        margin: 5% 0;
     }
 }
 
@@ -927,11 +933,32 @@ ul.breadcrumb li a:hover {
     .nuestra_productos_section_producto {
         grid-template-columns: 100%;
     }
+    .habdes_digital_reservas_encabezado_servicios_paso_01{
+        margin: 15% 0;
+    }
+    .habdes_digital_reservas_servicios_paso_01_content{
+        margin: 10% 0;
+    }
+    .habdes_digital_reservas_servicios_paso_01_element > label{
+        flex-direction: column;
+    }
+    .habdes_digital_reservas_servicios_paso_01_element > label > div{
+        text-align: center;
+    }
 
+    .habdes_digital_reservas_encabezado_servicios_paso_02_container{
+        margin: 10% 0;
+    }
 
     .element_date_time_container_time{
         grid-template-columns: 25% 25% 25% 25%;
     }
+    .habdes_digital_reservas_encabezado_servicios_paso_03_container {
+        margin: 50% 0;
+        background: red;
+        padding: 5% 0;
+    }
+
 }
 
 /* MQ PARA IPHONE X */

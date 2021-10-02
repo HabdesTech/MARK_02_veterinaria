@@ -74,7 +74,7 @@
             <h1>¡Bienvenido!</h1>
             <p>Realiza tu reserva y dejanos lo demás a nosotros</p>
         </div>
-        <div id="mostrarFecha">
+        <div id="mostrarFecha" class="fechaActual">
             <script type="text/javascript">fechaSesion();</script>
         </div>
     </section>
@@ -83,41 +83,38 @@
             <div>
                 <h3>1.- Escoge el servicio deseado</h3>
             </div>
-            <div class="habdes_digital_reservas_encabezado_servicios_paso_01_content">
-                <div class="habdes_digital_reservas_encabezado_servicios_paso_01_content_element01">
-                    <div class="element01_texto">
-                        <h5>Servicio de grooming</h5>
-                        <p>Para los engreídos de la familia</p>
-                    </div>
-                    <div class="element_precio01">
-                        <p>S/. 100</p>
-                    </div>
-                    <div class="divisor_vertical"></div>
-                    <div class="element_status">
-                        <input type="checkbox" style="width: 50px;">
-                    </div>
+            <div class="habdes_digital_reservas_servicios_paso_01_content">
+                <div class="habdes_digital_reservas_servicios_paso_01_element">
+                    <input type="checkbox" class="btn-check" id="btn-check-outlined01" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btn-check-outlined01">
+                        <div class="habdes_digital_reservas_servicios_paso_01_element_texto">
+                            <h5>Servicio de grooming</h5>
+                            <p>Lo mejor para los engreídos de la familia</p>
+                        </div>
+                        <div class="habdes_digital_reservas_servicios_paso_01_element_precio">
+                            <p>S/. 50</p>
+                            </div>
+                    </label>
                 </div>
-                <div class="habdes_digital_reservas_encabezado_servicios_paso_01_content_element02">
-                    <div>
-                        <h5>Servicio de hospitalización</h5>
-                        <p>La salud de tus engreídos es lo más importante para nosotros</p>
-                    </div>
-                    <div class="element_precio02">
-                        <p>S/. 100</p>
-                    </div>
-                    <div class="divisor_vertical"></div>
-                    <div>
-                        <input type="checkbox">
-                    </div>
+                <div class="habdes_digital_reservas_servicios_paso_01_element">
+                    <input type="checkbox" class="btn-check" id="btn-check-outlined02" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btn-check-outlined02">
+                        <div class="habdes_digital_reservas_servicios_paso_01_element_texto">
+                            <h5>Servicio de hospitalización</h5>
+                            <p>La salud de tus engreídos es lo más importante para nosotros</p>
+                        </div>
+                        <div class="habdes_digital_reservas_servicios_paso_01_element_precio">
+                            <p>S/. 100</p>
+                            </div>
+                    </label>
                 </div>
-
             </div>
         </div>
         <div class="habdes_digital_reservas_encabezado_servicios_paso_02">
             <div>
                 <h3>2.- Selecciona la fecha y la hora</h3>
             </div>
-            <div class="element_date_time">
+            <div class="element_date_time habdes_digital_reservas_encabezado_servicios_paso_02_container">
                 <div>
                     <input type="date" step="1">
                 </div>
@@ -132,15 +129,15 @@
                     <label class="btn btn-outline-primary" for="success-outlined02">10:30</label>
 
                     <input type="radio" class="btn-check" name="options-outlined" id="success-outlined03"
-                        autocomplete="off" >
+                        autocomplete="off">
                     <label class="btn btn-outline-primary" for="success-outlined03">11:00</label>
 
                     <input type="radio" class="btn-check" name="options-outlined" id="success-outlined04"
-                        autocomplete="off" >
+                        autocomplete="off">
                     <label class="btn btn-outline-primary" for="success-outlined04">11:30</label>
 
                     <input type="radio" class="btn-check" name="options-outlined" id="success-outlined05"
-                        autocomplete="off" >
+                        autocomplete="off">
                     <label class="btn btn-outline-primary" for="success-outlined05">12:00</label>
 
                     <input type="radio" class="btn-check" name="options-outlined" id="success-outlined06"
@@ -152,15 +149,15 @@
                     <label class="btn btn-outline-primary" for="success-outlined07">13:00</label>
 
                     <input type="radio" class="btn-check" name="options-outlined" id="success-outlined08"
-                        autocomplete="off" >
+                        autocomplete="off">
                     <label class="btn btn-outline-primary" for="success-outlined08">13:30</label>
 
                     <input type="radio" class="btn-check" name="options-outlined" id="success-outlined09"
-                        autocomplete="off" >
+                        autocomplete="off">
                     <label class="btn btn-outline-primary" for="success-outlined09">14:00</label>
 
                     <input type="radio" class="btn-check" name="options-outlined" id="success-outlined10"
-                        autocomplete="off" >
+                        autocomplete="off">
                     <label class="btn btn-outline-primary" for="success-outlined10">14:30</label>
 
                     <input type="radio" class="btn-check" name="options-outlined" id="success-outlined11"
@@ -171,14 +168,14 @@
                     <label class="btn btn-outline-primary" for="success-outlined12">15:30</label>
 
                     <input type="radio" class="btn-check" name="options-outlined" id="success-outlined13"
-                        autocomplete="off" >
+                        autocomplete="off">
                     <label class="btn btn-outline-primary" for="success-outlined13">16:00</label>
 
                     <input type="radio" class="btn-check" name="options-outlined" id="success-outlined14"
-                        autocomplete="off" >
+                        autocomplete="off">
                     <label class="btn btn-outline-primary" for="success-outlined14">16:30</label>
                     <input type="radio" class="btn-check" name="options-outlined" id="success-outlined15"
-                        autocomplete="off" >
+                        autocomplete="off">
                     <label class="btn btn-outline-primary" for="success-outlined15">17:00</label>
 
 
@@ -190,8 +187,8 @@
             <div>
                 <h3>3.- LLena tus datos y reserva tu cita</h3>
             </div>
-            <div>
-                <form class="row g-3">
+            <div class="habdes_digital_reservas_encabezado_servicios_paso_03_container">
+                <form class="row g-3 ">
                     <div class="col-md-6">
                         <input type="text" class="form-control" placeholder="Nombre del dueño" aria-label="First name"
                             id="nombreUsuario">
@@ -263,3 +260,29 @@
 </body>
 
 </html>
+<!-- <div class="habdes_digital_reservas_encabezado_servicios_paso_01_content_element01">
+                    <div class="element01_texto">
+                        <h5>Servicio de grooming</h5>
+                        <p>Para los engreídos de la familia</p>
+                    </div>
+                    <div class="element_precio01">
+                        <p>S/. 100</p>
+                    </div>
+                    <div class="divisor_vertical"></div>
+                    <div class="element_status">
+                        <input type="checkbox" style="width: 50px;">
+                    </div>
+                </div>
+                <div class="habdes_digital_reservas_encabezado_servicios_paso_01_content_element02">
+                    <div>
+                        <h5>Servicio de hospitalización</h5>
+                        <p>La salud de tus engreídos es lo más importante para nosotros</p>
+                    </div>
+                    <div class="element_precio02">
+                        <p>S/. 100</p>
+                    </div>
+                    <div class="divisor_vertical"></div>
+                    <div>
+                        <input type="checkbox">
+                    </div>
+                </div>

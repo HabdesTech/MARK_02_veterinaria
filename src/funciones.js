@@ -130,11 +130,14 @@ function cierreVentana() {
 // }
 
 function fechaSesion() {
+    const diaSemana= ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes","Sábado", "Domingo"]
+    const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Setiembre", "Octubre", "Noviembre","Diciembre"]
+
     const fecha = new Date()
     const añoActual = fecha.getFullYear();
-    const hoy = fecha.getDate();
-    const mesActual = fecha.getMonth() + 1
-    let fechaObtenida = hoy + "/" + mesActual + "/" + añoActual
+    let hoy = fecha.getDay();
+    const mesActual = fecha.getMonth()
+    let fechaObtenida = diaSemana[hoy] +" " + hoy + " de " + meses[mesActual] + " del " + añoActual
     document.getElementById("mostrarFecha").innerHTML= fechaObtenida
 } 
 
