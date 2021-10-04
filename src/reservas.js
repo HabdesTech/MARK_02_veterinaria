@@ -68,7 +68,7 @@ function recopilacionDatos() {
     let horaSolicitada = [];
 
     // CONDICIONAL PARA ASIGNAR UN STRING A LA VARIABLE "servicioSolicitado"
-    for(var i = 0; i < TODOS_LOS_SERVICIOS.length; i++){
+    for(let i = 0; i < TODOS_LOS_SERVICIOS.length; i++){
         if(TODOS_LOS_SERVICIOS[i]){
             servicioSolicitado.push(DETALLE_DE_SERVICIOS[i]["servicio"])
         } else {
@@ -89,7 +89,7 @@ function recopilacionDatos() {
 
 
     //  CONDICIONAL PARA DETERMINAR EL PRECIO DEL O LOS SERVICIOS A RESERVAR
-    for(var i = 0; i < TODOS_LOS_SERVICIOS.length; i++){
+    for(let i = 0; i < TODOS_LOS_SERVICIOS.length; i++){
         if(TODOS_LOS_SERVICIOS[i]){
             precioServicioSolicitado.push(DETALLE_DE_SERVICIOS[i]["precio"])
         } else {
@@ -110,7 +110,7 @@ function recopilacionDatos() {
     // }
 
     // CONDICIIONAL PARA ASIGNAR UN STRING A LA VARIABLE "horaSolicitada"
-    for(var i = 0; i<TODAS_LAS_HORAS.length; i++){
+    for(let i = 0; i<TODAS_LAS_HORAS.length; i++){
         if(TODAS_LAS_HORAS[i]){
             horaSolicitada.push(HORARIOS_DE_SERVICIO[i])
         } else {
@@ -165,9 +165,44 @@ function recopilacionDatos() {
     //     alert ("Por favor, selecciona una hora para la reserva")
     // }
 
+    //CONDICIONAL PARA ENTREGAR DETALLE DEL METODO DE PAGO SELECCIONADO
+    if (metodoPago.value == "Transferencia interbancaria") {
+        formaPago = "Transferencia bancaria" + " " + 2003151735911
+    } else if (metodoPago.value == "Yape") {
+        formaPago = "Yapea" + " -> " + 993722873
+    } else if (metodoPago.value == "Plin") {
+        formaPago = "Plinea" + " -> " + 993722873
+    } else if (metodoPago.value == "tunki") {
+        formaPago = "Tunkea" + " -> " + 993722873
+    } else {
+        "No aplica"
+    }
 
-    alert(servicioSolicitado, precioServicioSolicitado, horaSolicitada, fechaReserva.value, nombreUsuario.textContent, nombreMascota.textContent, telefonoUsuario.textContent, correoUsuario.textContent, metodoPago.value)
+
+
+    // console.log(servicioSolicitado, precioServicioSolicitado, horaSolicitada, fechaReserva.value, nombreUsuario.textContent, nombreMascota.textContent, telefonoUsuario.textContent, correoUsuario.textContent, metodoPago.value)
+
+
+    window.open(`https://api.whatsapp.com/send/?phone=51960995232&text=%F0%9F%91%8B+Hola%21+Acabo+de+realizar+una+reserva+en+https://veterinaria.habdes.digital/%3A%0A%0A%F0%9F%91%A9%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BBDATOS+DEL+CLIENTE%3A%0ANombre%3A+${nombreUsuario.value}%0AMascota%3A+${nombreMascota.value}%0ATeléfono%3A+${telefonoUsuario.value}%0ACorreo+electrónico%3A+${correoUsuario.value}%0A%0A%F0%9F%93%A6+DETALLE+DE+LA+RESERVA%3A%0AServicios%3A+${servicioSolicitado}%0AFecha%3A+${fechaReserva.value}%0AHora%3A+${horaSolicitada}%0ATotal+a+pagar%3A+S/.+${precioServicioSolicitado}%0A%0A%F0%9F%92%B3+MÉTODO+DE+PAGO%3A%0AMétodo+de+pago+solicitado%3A+${formaPago}%0A%0A-----------------------------------%0AEspere+mientras+confirmamos+su+reserva.+Gracias`, '_blank')
 
 }
+
+// %F0%9F%91%8B+Hola%21+Acabo+de+realizar+una+reserva+en+https://veterinaria.habdes.digital/%3A%0A%0A
+// %F0%9F%91%A9%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BBDATOS+DEL+CLIENTE%3A%0A
+// Nombre%3A+${nombreUsuario.value}%0A
+// Mascota%3A+${nombreMascota.value}%0A
+// Teléfono%3A+${telefonoUsuario.value}%0A
+// Correo+electrónico%3A+${correoUsuario.value}%0A
+
+// %F0%9F%93%A6+DETALLE+DE+LA+RESERVA%3A%0A
+// Servicios%3A+${servicioSolicitado}%0A
+// Fecha%3A+${fechaReserva.value}%0A
+// Hora%3A+${horaSolicitada}%0A
+// Total+a+pagar%3A+S/.+${precioServicioSolicitado}%0A%0A
+
+// %F0%9F%92%B3+MÉTODO+DE+PAGO%3A%0A
+// Método+de+pago+solicitado%3A+${formaPago}%0A%0A
+// -----------------------------------%0A
+// Espere+mientras+confirmamos+su+reserva.+Gracias
 
 
