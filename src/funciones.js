@@ -96,7 +96,6 @@ function cierreVentana() {
 }
 
 
-
 // %F0%9F%91%8B%+Hola%21+Acabo+de+realizar+el+siguiente+pedido+en+https://digital.habdes.pe/%3A%0A%0A
 // DATOS+DEL+CLIENTE%3A%0A
 // Mi+nombre+es%3A+${nombreUsuario.value}%0A
@@ -115,34 +114,3 @@ function cierreVentana() {
 // Total%3A+S/.+${precioTotal}%0A%0A
 // MÉTODO+DE+PAGO%3A%0A
 // Método+de+pago+solicitado%3A+${formaPago}
-
-//-------------------FUNCION PARA OBTNER LA FECHA
-
-// function mostrarHora () {
-//     momentoActual = new Date();
-//     hora = momentoActual.getHours();
-//     minuto = momentoActual.getMinutes();
-//     segundo = momentoActual.getSeconds();
-//     horaImprimible= hora + ":" + minuto + ":" + segundo
-
-//     //salida
-//     document.getElementById("mostrarHora").innerHTML = horaImprimible
-// }
-
-function fechaSesion() {
-    const diaSemana= ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes","Sábado", "Domingo"]
-    const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Setiembre", "Octubre", "Noviembre","Diciembre"]
-
-    const fecha = new Date()
-    const añoActual = fecha.getFullYear();
-    let hoy = fecha.getDay();
-    const mesActual = fecha.getMonth()
-    let fechaObtenida = diaSemana[hoy] +" " + hoy + " de " + meses[mesActual] + " del " + añoActual
-    document.getElementById("mostrarFecha").innerHTML= fechaObtenida
-} 
-
-/*
-La siguiente cadena (string) se muestra en la ventana de la consola:
-<p>primer parrafo hijo de div id="txt"</p>
-<p>segundo parrafo hijo de id="txt" txt</p>
-*/
