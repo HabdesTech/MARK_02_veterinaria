@@ -57,7 +57,7 @@ function recopilacionDatos() {
         { servicio: "servicio de esterilización para perros", precio: 55 },
         { servicio: "servicio de esterilización para gatos", precio: 45 }
     ]
-
+    
     const HORARIOS_DE_SERVICIO = ["10:00","10:30","11:00","11:30","12:00","12:30","13:00","13:30","14:00","14:30","15:00","15:30","16:00","16:30","17:00"]
 
 
@@ -96,6 +96,7 @@ function recopilacionDatos() {
             console.log("Elige uno de nuestros servicios")
         }
     }
+    let calculoDeServicio = precioServicioSolicitado.reduce((a,b)=> a + b )
 
 
     // CONDICIONAL ALTERNA PARA NO MAS DE 2 SERVICIOS
@@ -175,17 +176,19 @@ function recopilacionDatos() {
     } else if (metodoPago.value == "tunki") {
         formaPago = "Tunkea" + " -> " + 993722873
     } else {
-        "No aplica"
+        alert ("Seleccioné un método de pago")
     }
 
-
-
-    // console.log(servicioSolicitado, precioServicioSolicitado, horaSolicitada, fechaReserva.value, nombreUsuario.textContent, nombreMascota.textContent, telefonoUsuario.textContent, correoUsuario.textContent, metodoPago.value)
-
-
-    window.open(`https://api.whatsapp.com/send/?phone=51960995232&text=%F0%9F%91%8B+Hola%21+Acabo+de+realizar+una+reserva+en+https://veterinaria.habdes.digital/%3A%0A%0A%F0%9F%91%A9%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BBDATOS+DEL+CLIENTE%3A%0ANombre%3A+${nombreUsuario.value}%0AMascota%3A+${nombreMascota.value}%0ATeléfono%3A+${telefonoUsuario.value}%0ACorreo+electrónico%3A+${correoUsuario.value}%0A%0A%F0%9F%93%A6+DETALLE+DE+LA+RESERVA%3A%0AServicios%3A+${servicioSolicitado}%0AFecha%3A+${fechaReserva.value}%0AHora%3A+${horaSolicitada}%0ATotal+a+pagar%3A+S/.+${precioServicioSolicitado}%0A%0A%F0%9F%92%B3+MÉTODO+DE+PAGO%3A%0AMétodo+de+pago+solicitado%3A+${formaPago}%0A%0A-----------------------------------%0AEspere+mientras+confirmamos+su+reserva.+Gracias`, '_blank')
-
+    window.open(`https://api.whatsapp.com/send/?phone=51960995232&text=%F0%9F%91%8B+Hola%21+Acabo+de+realizar+una+reserva+en+https://veterinaria.habdes.digital/%3A%0A%0A%F0%9F%91%A9%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BBDATOS+DEL+CLIENTE%3A%0ANombre%3A+${nombreUsuario.value}%0AMascota%3A+${nombreMascota.value}%0ATeléfono%3A+${telefonoUsuario.value}%0ACorreo+electrónico%3A+${correoUsuario.value}%0A%0A%F0%9F%93%A6+DETALLE+DE+LA+RESERVA%3A%0AServicios%3A+${servicioSolicitado}%0AFecha%3A+${fechaReserva.value}%0AHora%3A+${horaSolicitada}%0ATotal+a+pagar%3A+S/.+${calculoDeServicio}%0A%0A%F0%9F%92%B3+MÉTODO+DE+PAGO%3A%0AMétodo+de+pago+solicitado%3A+${formaPago}%0A%0A-------------------------------------------------------------------%0AEspere+mientras+confirmamos+su+reserva.+Gracias`, '_blank')
+    actualizarVentana()
 }
+function actualizarVentana() {
+    swal("Tu reserva se generó exitosamente", "Gracias por reservar con nosotros", "success");
+    // setTimeout(() => {document.getElementsByClassName("swal-button--confirm").click()},5000 )
+    // // location.reload()
+    setTimeout(()=> {location.reload()},5000)
+}
+
 
 // %F0%9F%91%8B+Hola%21+Acabo+de+realizar+una+reserva+en+https://veterinaria.habdes.digital/%3A%0A%0A
 // %F0%9F%91%A9%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BBDATOS+DEL+CLIENTE%3A%0A

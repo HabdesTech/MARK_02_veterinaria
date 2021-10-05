@@ -523,9 +523,6 @@ ul.breadcrumb li a:hover {
 .product_container_img {
     width: 60%;
 }
-.product_container_img > img{
-    border-radius: 15px 0 0 15px;
-}
 
 .product_container_content {
     width: 40%;
@@ -535,6 +532,7 @@ ul.breadcrumb li a:hover {
 }
 
 .product_container_img>img {
+    border-radius: 15px 0 0 15px;
     max-width: 1000px;
     max-height: 800px;
     width: 100%;
@@ -669,6 +667,15 @@ ul.breadcrumb li a:hover {
 
 .product_widget_texto>a:hover {
     color: var(--color-propuesta02);
+}
+
+.metodos_pago > div{
+    margin: 0 auto;
+    text-align: center;
+}
+.metodos_pago > div >img{
+    max-width: 200px;
+    margin: 2% 0;
 }
 
 
@@ -848,6 +855,12 @@ ul.breadcrumb li a:hover {
         width: 100%;
         justify-content: center;
     }
+    .banner_section_contenido_img{
+        order: 1;
+    }
+    .banner_section_contenido{
+        order: 2;
+    }
     .banner_section_contenido, .decorar_hogar_section_texto {
         margin: 5% 0;
         padding: 0% 5%;
@@ -962,7 +975,15 @@ ul.breadcrumb li a:hover {
 
 /* MQ PARA IPHONE X */
 
-@media(max-width: 375px) {}
+@media(max-width: 375px) {
+    .product_container_img > img{
+        border-radius: 15px ;
+        max-width: 360px;
+        max-height: 400px;
+        width: 100%;
+        margin: 0 2%;
+    }
+}
 
 /* MQ PARA IPHONE 5/SE */
 
